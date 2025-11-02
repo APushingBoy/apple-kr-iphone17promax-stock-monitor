@@ -1,5 +1,3 @@
-# apple-kr-iphone17promax-stock-monitor
-(自用)用来查询韩国官方7家Apple store的iPhone 17 Pro Max指定型号的库存
 # 🇰🇷 Apple Store iPhone 17 Pro Max 银色库存监控
 
 一个基于 Python 的自动监控脚本，用于检测韩国 Apple Store 中 **iPhone 17 Pro Max 银色 512GB** 的门店自提库存变化，并通过 **Bark 推送** 实时通知。
