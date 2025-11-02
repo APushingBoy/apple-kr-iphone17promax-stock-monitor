@@ -2,7 +2,7 @@
 
 一个基于 Python 的自动监控脚本，用于检测韩国 Apple Store 中 **iPhone 17 Pro Max 银色 512GB** 的门店自提库存变化，并通过 **Bark 推送** 实时通知。
 
-> **仓库推荐名称**：`apple-kr-iphone17promax-stock-monitor`
+> **仓库名称**：`apple-kr-iphone17promax-stock-monitor`
 
 ---
 
@@ -98,6 +98,8 @@ python kr_iphone17pm_silver512_monitor.py
 
 ## 🕒 延迟启动
 
+延迟启动是因为苹果店大概率不会在夜间补货，所以我个人是晚上设定好时间，从第二天早上指定时间开始运行。
+
 如果你希望在 **7 小时 30 分钟后自动运行脚本**：
 
 **Windows PowerShell：**
@@ -117,7 +119,7 @@ sleep $((7*3600 + 30*60)) && python3 kr_iphone17pm_silver512_monitor.py
 ## 🧠 提示
 
 * 如果访问苹果接口时未返回门店列表，请确认 URL 中包含 `store=Rxxx` 参数。
-* 若要监控其他型号（例如 iPhone 17 Pro 256GB），请修改 `SKU` 与 URL。
+* 若要监控其他型号（例如 iPhone 17 Pro 256GB），请修改 `SKU` 与 URL。其他型号的iPhone的SKU请自行查找后替换。
 * 若频繁请求，建议适当增大轮询间隔以避免被限流。
 
 ---
